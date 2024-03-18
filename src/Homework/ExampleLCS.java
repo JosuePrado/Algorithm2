@@ -1,3 +1,5 @@
+package Homework;
+
 public class ExampleLCS {
 
     public static int longestText(String text1, String text2) {

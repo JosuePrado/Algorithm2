@@ -1,3 +1,5 @@
+package Homework;
+
 public class LCSExercies {
 
     public static void main (String[] args) {

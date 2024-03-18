@@ -1,14 +1,10 @@
-import java.util.function.Function;
+import Homework.stringMatching.Naive;
 
 public class Example {
     public static void main(String[] args) {
-        Function<Integer, Integer> squareFunction = getSquareFunction();
+        Naive a = new Naive();
 
-        int result = squareFunction.apply(5);
-        System.out.println("El cuadrado de 5 es: " + result);
+        System.out.println(a.naive("000010001010001", "0001"));
     }
 
-    public static Function<Integer, Integer> getSquareFunction() {
-        return (Integer x) -> x * x;
-    }
 }
