@@ -2,7 +2,7 @@ package Homework.stringMatching;
 
 public class Naive {
 
-    public String naive (String text, String pattern) {
+    public void naive (String text, String pattern) {
         char[] textArr = text.toCharArray();
         char[] patternArr = pattern.toCharArray();
 
@@ -11,7 +11,7 @@ public class Naive {
         boolean isPattern;
 
         if ( n < m ) {
-            return "Pattern not found in the text";
+            System.out.println( "Pattern not found in the text");
         }
 
         for (int i = 0; i <= n-m ; i++) {
@@ -28,6 +28,5 @@ public class Naive {
             }
         }
 
-        return "end";
     }
 }
