@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class FiniteAutomaton {
     private final String pattern;
-    private final Map<Character, Integer>[] transitionTable;
+    public final Map<Character, Integer>[] transitionTable;
 
     public FiniteAutomaton(String pattern, String alphabet) {
         this.pattern = pattern;
@@ -56,7 +56,7 @@ public class FiniteAutomaton {
         String pattern = "aaba";
         String text = "aabaacaadaabaaba";
 
-        FiniteAutomaton automaton = new FiniteAutomaton(pattern, "abcdefg");
+        FiniteAutomaton automaton = new FiniteAutomaton(pattern, "abc");
         List<Integer> matches = automaton.search(text);
         System.out.println("Matches found at positions: " + matches);
     }
